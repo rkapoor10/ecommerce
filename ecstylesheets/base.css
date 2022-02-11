@@ -15,6 +15,9 @@
 .bg-baseshade-gray{
     background-color: var(--baseshade-gray);
 }
+.bg-lightshade-blue{
+    background-color: var(--lightshade-blue);
+}
 .bg-darksecondary{
     background-color: var(--darksecondary-color);
 }
