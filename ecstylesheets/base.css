@@ -1,0 +1,30 @@
+:root{
+    --baseshade-gray: #434343;
+}
+
+.black{
+    color: var(--black-color);
+}
+.bg-black{
+    background-color: var(--black-color);
+}
+
+.baseshade-gray{
+    color: var(--baseshade-gray);
+}
+.bg-baseshade-gray{
+    background-color: var(--baseshade-gray);
+}
+.bg-lightshade-blue{
+    background-color: var(--lightshade-blue);
+}
+.bg-darksecondary{
+    background-color: var(--darksecondary-color);
+}
+.darksecondary{
+    color: var(--darksecondary-color);
+}
+.fs-07{
+    font-size: 0.7rem;
+}
+
