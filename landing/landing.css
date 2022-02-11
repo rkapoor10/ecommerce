@@ -23,7 +23,7 @@
 }
 .lp-prod-banner{
     grid-area: prod;
-    margin: 3rem 0;
+    margin: 3rem 1rem;
 }
 .lp-brands{
     grid-area: brnd;
@@ -43,10 +43,13 @@
     transform: scale(1.02) translate(-1px,0px);
 }
 
+
+
 .circle{
     border-radius: 50%;
     width: 13rem;
     height: 13rem;
+    
 }
 
 .catg-card:hover{
@@ -59,12 +62,15 @@
 
 
 .content, .background{
+   
     grid-column: 1/2;
     grid-row: 1/2;
 }
 .category-wrapper{
     width: 80%;
     justify-content: space-around;
+    gap: 1rem;
+    
     
 }
 .category-wrapper, .brands-wrapper{

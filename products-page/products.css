@@ -1,0 +1,44 @@
+.products-pg-layout {
+  display: grid;
+  grid-template-areas:
+    "head head head head head head head head head head head head "
+    "fltr fltr prod prod prod prod prod prod prod prod prod prod ";
+}
+
+.pd-header-layout {
+  grid-area: head;
+}
+
+.pd-filter-layout {
+  margin: 1rem;
+  grid-area: fltr;
+}
+
+.pd-products-layout {
+  margin: 1rem;
+  grid-area: prod;
+}
+
+.child {
+  background-color: var(--lightshade-blue);
+}
+
+/* filter-section--------------------------------------------------------------------------- */
+.clear-btn {
+  border: none;
+  background-color: transparent;
+  color: var(--baseteal-color);
+  padding: 0.3rem 1rem;
+  border-bottom: 1px solid var(--lightgray-color);
+}
+
+.clear-btn:hover {
+  border-bottom: 1px solid var(--lightteal-color);
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 80%;
+}

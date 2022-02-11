@@ -27,4 +27,31 @@
 .fs-07{
     font-size: 0.7rem;
 }
+.seperator{
+    border-bottom: 1px solid #494b4c;
+}
+
+.padtb-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+input[type="radio"] {
+    height: 1rem;
+    width: 1rem;
+    accent-color: var(--primary-color);
+}
+
+.center-flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.bg-color-transparent{
+    background-color: transparent;
+}
+
 
