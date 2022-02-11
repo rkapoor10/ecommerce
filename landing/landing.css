@@ -1,0 +1,77 @@
+.child{
+    /* height: 25vh; */
+}
+
+.landing-page-layout{
+    display: grid;
+    grid-template-areas: 
+    "head head head head head head"
+    "bann bann bann bann bann bann"
+    "catg catg catg catg catg catg"
+    "brnd brnd brnd brnd brnd brnd";
+}
+
+.lp-header{
+    grid-area: head;
+}
+
+.lp-banner{
+    grid-area: bann;
+    margin-bottom: 5rem;
+}
+.lp-categories{
+    grid-area: catg;
+    margin: 5rem 0;
+}
+.lp-brands{
+    grid-area: brnd;
+    margin: 5rem 0;
+}
+
+
+
+/* category css-------------------------------------------------------------------------- */
+.overlay-grid{
+    display: grid;
+}
+
+
+.brand-image:hover, .catg-card:hover{
+    box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.41);
+    transform: scale(1.02) translate(-1px,0px);
+}
+
+.square{
+    width: 15rem;
+    height: 15rem;
+}
+
+
+.content, .background{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.category-wrapper, .brands-wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* brands -------------------------------------------- */
+
+.brand-image{
+    text-align: center;
+
+    height: 5rem;
+    width: 20rem;
+}
+
+/* .img-responsive{
+    width: 100%;
+    height: auto;
+} */
