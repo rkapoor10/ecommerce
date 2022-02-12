@@ -64,16 +64,14 @@ input[type="radio"] {
 
 
 .card-container-horizontal{
-    /* width: 680px;
-    height: 250px; */
+
     border: none;
     border-radius: 0rem;
+    width: auto;
+    height: auto;
 }
 
-/* .image-container-horizontal{
-    width: 200px;
-    height: 220px;
-} */
+
 
 .padding-y-1{
     padding-top: 1rem;
@@ -93,3 +91,6 @@ input[type="radio"] {
     padding-right: 2rem;
 }
 
+.w-90{
+    width: 90%;
+}
