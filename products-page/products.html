@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Page</title>
+    <link rel="shortcut icon" href="/assets/nobg-logo.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/284b0bb15e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://swift-uiv1.netlify.app/docs/docs.css" />
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <div class="products-pg-layout">
+        <!-- NAVBAR-------------------------------------------------------------------------------- -->
+        <div class="child pd-header-layout">
+            <header class="navbar-container-flex bg-white">
+                <div class="nav-title">
+                    <div class="nav-logo">
+                        <img src="/assets/rallyalley-logo.png" alt="logo" srcset="" />
+                    </div>
+                    <div class="flex-title">
+                        <div class="fw-bold baseshade-gray">
+                            <a href="/index.html">RALLY<span class="baseteal">ALLEY</span>
+                            </a>
+                        </div>
+                        <p class="fs-07 baseteal">Smashinn Badminton Products your way</p>
+                    </div>
+                </div>
+                <div class="nav-search-box">
+                    <input class="search-bar fs-1r" type="search" placeholder="Search for producs, brands and more.." />
+                    <button class="search-btn" type="submit">
+                        <i class="fas fa-search" title="search"></i>
+                    </button>
+                </div>
+                <div class="navbar-icons">
+                    <button class="search-btn-alone" type="submit">
+                        <i class="fas fa-search" title="search"></i>
+                    </button>
+                    <button class="btn btn-padding txt-s btn-solid white login-btn bg-baseteal">
+                        Login
+                    </button>
+                    <i class="navbar-icons far fa-heart fs-15 gray"><a href="/wishlist/wishlist.html"></a></i>
+                    <i class="navbar-icons fas fa-shopping-cart fs-15 gray" title="Cart"><a
+                            href="/cart-pages/cart.html"></a></i>
+                </div>
+            </header>
+        </div>
+
+        <!-- FILTER SECTION ----------------------------------------------------------------------- -->
+        <div class="child pd-filter-layout">
+            <div class="filter-container">
+                <div class="space-between wrapit seperator padtb-1">
+                    <h4 class="darksecondary">FILTERS</h4>
+                    <button class="txt-xs clear-btn">Clear All</button>
+                </div>
+                <div class="seperator padtb-1">
+                    <h4 class="mb-1 darksecondary">PRICE</h4>
+                    <input type="range" min="1" max="100" value="50" />
+                </div>
+                <div class="seperator padtb-1">
+                    <h4 class="mb-1 darksecondary">CATEGORY</h4>
+                    <div class="checkbox column-flex">
+                        <label class="txt-xs gray" for="checkbox-1">
+                            <input id="checkbox-1" type="checkbox" name="checkbox" />
+                            Racquets
+                        </label>
+                        <label class="txt-xs gray" for="checkbox-2">
+                            <input id="checkbox-2" type="checkbox" name="checkbox" />
+                            Shoes
+                        </label>
+                        <label class="txt-xs gray" for="checkbox-3">
+                            <input id="checkbox-3" type="checkbox" name="checkbox" />
+                            Apparel
+                        </label>
+                        <label class="txt-xs gray" for="checkbox-4">
+                            <input id="checkbox-4" type="checkbox" name="checkbox" />
+                            Bags
+                        </label>
+                    </div>
+                </div>
+                <div class="seperator padtb-1">
+                    <h4 class="mb-1 darksecondary">RATINGS</h4>
+                    <div class="checkbox column-flex">
+                        <label class="txt-xs gray" for="radio-1">
+                            <input id="radio-1" type="radio" name="radio" />
+                            4 stars & above
+                        </label>
+                        <label class="txt-xs gray" for="radio-2">
+                            <input id="radio-2" type="radio" name="radio" />
+                            3 stars & above
+                        </label>
+                        <label class="txt-xs gray" for="radio-3">
+                            <input id="radio-3" type="radio" name="radio" />
+                            2 stars & above
+                        </label>
+                        <label class="txt-xs gray" for="radio-4">
+                            <input id="radio-4" type="radio" name="radio" />
+                            1 stars & above
+                        </label>
+                    </div>
+                </div>
+                <div class="seperator padtb-1">
+                    <h4 class="mb-1 darksecondary">SORT</h4>
+                    <div class="checkbox column-flex">
+                        <label class="txt-xs gray" for="radio-sort1">
+                            <input id="radio-sort1" type="radio" name="radio" />
+                            Price - Low to High
+                        </label>
+                        <label class="txt-xs gray" for="radio-sort2">
+                            <input id="radio-sort2" type="radio" name="radio" />
+                            Price - High to Low
+                        </label>
+                    </div>
+                </div>
+                <div class="seperator padtb-1">
+                    <h4 class="mb-1 darksecondary">DISCOUNT</h4>
+                    <div class="checkbox column-flex">
+                        <label class="txt-xs gray" for="checkbox-disc-1">
+                            <input id="checkbox-disc-1" type="checkbox" name="checkbox" />
+                            10% or below
+                        </label>
+                        <label class="txt-xs gray" for="checkbox-disc-2">
+                            <input id="checkbox-disc-2" type="checkbox" name="checkbox" />
+                            10% or more
+                        </label>
+                        <label class="txt-xs gray" for="checkbox-disc-3">
+                            <input id="checkbox-disc-3" type="checkbox" name="checkbox" />
+                            40% or more
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN SECTION -------------------------------------------------------------------------- -->
+        <div class="child pd-products-layout">
+            <div class="grid-column-layout">
+                <div class="card-container">
+                    <div class="parent-image">
+                        <img class="image-container" src="https://picsum.photos/300/400" alt="" />
+                        <div class="tags-flex">
+                            <div class="tags-badge child-tags bg-baseblue">New</div>
+                            <button class="btn-round btn-heart txt-s lightteal child-wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <span class="whishlist-heart"></span>
+
+                    <div class="title">
+                        <h3>Large Title</h3>
+                        <p class="title-small txt-s">small title</p>
+                    </div>
+                    <p class="price-box txt-xs fw-bold">
+                        Rs. 1345 <s class="striked">Rs. 1495</s>
+                        <span class="discount darkorange">(10% OFF)</span>
+                    </p>
+                    <button class="btn buy-btn-padding txt-xs btn-solid cta-btn bg-lightteal white fw-semibold">
+                        BUY NOW
+                    </button>
+                    <button class="btn-secondary txt-xs">ADD TO CART</button>
+                </div>
+
+                <div class="card-container">
+                    <div class="parent-image">
+                        <img class="image-container" src="https://picsum.photos/300/400" alt="" />
+                        <div class="tags-flex">
+                            <div class="tags-badge child-tags bg-baseblue">New</div>
+                            <button class="btn-round btn-heart txt-s lightteal child-wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <span class="whishlist-heart"></span>
+
+                    <div class="title">
+                        <h3>Large Title</h3>
+                        <p class="title-small txt-s">small title</p>
+                    </div>
+                    <p class="price-box txt-xs fw-bold">
+                        Rs. 1345 <s class="striked">Rs. 1495</s>
+                        <span class="discount darkorange">(10% OFF)</span>
+                    </p>
+                    <button class="btn buy-btn-padding txt-xs btn-solid cta-btn bg-lightteal white fw-semibold">
+                        BUY NOW
+                    </button>
+                    <button class="btn-secondary txt-xs">ADD TO CART</button>
+                </div>
+
+                <div class="card-container">
+                    <div class="parent-image">
+                        <img class="image-container" src="https://picsum.photos/300/400" alt="" />
+                        <div class="tags-flex">
+                            <div class="tags-badge child-tags bg-baseorange">Trending</div>
+                            <button class="btn-round btn-heart txt-s lightteal child-wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <span class="child-rating rating-box fw-semibold">4 <i class="fas fa-star baseteal"></i>| 1542
+                        </span>
+                    </div>
+                    <span class="whishlist-heart"></span>
+                    <div class="title">
+                        <h3>Large Title</h3>
+                        <p class="title-small txt-s">small title</p>
+                    </div>
+                    <p class="price-box txt-xs fw-bold">
+                        Rs. 3521 <s class="striked">Rs. 4695</s>
+                        <span class="discount darkorange">(Rs. 1174 OFF)</span>
+                    </p>
+                    <button class="btn buy-btn-padding txt-xs btn-solid cta-btn bg-lightteal white fw-semibold">
+                        BUY NOW
+                    </button>
+                    <button class="btn-secondary txt-xs">ADD TO CART</button>
+                </div>
+
+                <div class="card-container">
+                    <div class="parent-image">
+                        <img class="image-container" src="https://picsum.photos/300/400" alt="" />
+                        <div class="tags-flex">
+                            <div class="tags-badge child-tags bg-baseorange">Trending</div>
+                            <button class="btn-round btn-heart txt-s lightteal child-wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <span class="child-rating rating-box fw-semibold">4 <i class="fas fa-star baseteal"></i>| 1542
+                        </span>
+                    </div>
+                    <span class="whishlist-heart"></span>
+                    <div class="title">
+                        <h3>Large Title</h3>
+                        <p class="title-small txt-s">small title</p>
+                    </div>
+                    <p class="price-box txt-xs fw-bold">
+                        Rs. 3521 <s class="striked">Rs. 4695</s>
+                        <span class="discount darkorange">(Rs. 1174 OFF)</span>
+                    </p>
+                    <button class="btn buy-btn-padding txt-xs btn-solid cta-btn bg-lightteal white fw-semibold">
+                        BUY NOW
+                    </button>
+                    <button class="btn-secondary txt-xs">ADD TO CART</button>
+                </div>
+
+                <div class="card-container parent-container">
+                    <div class="parent-image">
+                        <img class="image-container" src="https://picsum.photos/300/400" alt="" />
+
+                        <div class="tags-flex">
+                            <button class="btn-round btn-heart txt-s lightteal child-wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <span class="whishlist-heart"></span>
+
+                    <div class="title">
+                        <h3>Large Title</h3>
+                        <p class="title-small txt-s">small title</p>
+                    </div>
+
+                    <p class="price-box txt-xs fw-bold">
+                        Rs. 3521 <s class="striked">Rs. 4695</s>
+                        <span class="discount darkorange">(Rs. 1174 OFF)</span>
+                    </p>
+                    <button class="btn buy-btn-padding txt-xs btn-solid cta-btn bg-lightteal white fw-semibold">
+                        BUY NOW
+                    </button>
+                    <button class="btn-secondary txt-xs">ADD TO CART</button>
+
+                    <div class="overlay-text fs-2 fw-bold">COMING SOON!</div>
+                </div>
+
+                <div class="card-container">
+                    <div class="parent-image">
+                        <img class="image-container" src="https://picsum.photos/300/400" alt="" />
+
+                        <div class="tags-flex">
+                            <button class="btn-round btn-heart txt-s lightteal child-wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <span class="whishlist-heart"></span>
+
+                    <div class="title">
+                        <h3>Large Title</h3>
+                        <p class="title-small txt-s">small title</p>
+                    </div>
+
+                    <s class="price-box txt-xs fw-bold">Rs. 1345 <s class="striked">Rs. 1495</s>
+                        <span class="discount darkorange">(10% OFF)</span></s>
+
+                    <button class="btn buy-btn-padding txt-xs btn-solid white fw-semibold btn-disable" disabled>
+                        <p class="basered">OUT OF STOCK</p>
+                    </button>
+
+                    <button class="btn-disable btn-secondary txt-xs" disabled>
+                        ADD TO CART
+                    </button>
+                </div>
+
+                <div class="card-container">
+                    <div class="parent-image">
+                        <img class="image-container" src="https://picsum.photos/300/400" alt="" />
+                        <div class="tags-flex">
+                            <div class="tags-badge child-tags bg-baseorange">Trending</div>
+                            <button class="btn-round btn-heart txt-s lightteal child-wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <span class="child-rating rating-box fw-semibold">4 <i class="fas fa-star baseteal"></i>| 1542
+                        </span>
+                    </div>
+                    <span class="whishlist-heart"></span>
+                    <div class="title">
+                        <h3>Large Title</h3>
+                        <p class="title-small txt-s">small title</p>
+                    </div>
+                    <p class="price-box txt-xs fw-bold">
+                        Rs. 3521 <s class="striked">Rs. 4695</s>
+                        <span class="discount darkorange">(Rs. 1174 OFF)</span>
+                    </p>
+                    <button class="btn buy-btn-padding txt-xs btn-solid cta-btn bg-lightteal white fw-semibold">
+                        BUY NOW
+                    </button>
+                    <button class="btn-secondary txt-xs">ADD TO CART</button>
+                </div>
+
+                <div class="card-container parent-container">
+                    <div class="parent-image">
+                        <img class="image-container" src="https://picsum.photos/300/400" alt="" />
+
+                        <div class="tags-flex">
+                            <button class="btn-round btn-heart txt-s lightteal child-wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <span class="whishlist-heart"></span>
+
+                    <div class="title">
+                        <h3>Large Title</h3>
+                        <p class="title-small txt-s">small title</p>
+                    </div>
+
+                    <p class="price-box txt-xs fw-bold">
+                        Rs. 3521 <s class="striked">Rs. 4695</s>
+                        <span class="discount darkorange">(Rs. 1174 OFF)</span>
+                    </p>
+                    <button class="btn buy-btn-padding txt-xs btn-solid cta-btn bg-lightteal white fw-semibold">
+                        BUY NOW
+                    </button>
+                    <button class="btn-secondary txt-xs">ADD TO CART</button>
+
+                    <div class="overlay-text fs-2 fw-bold">COMING SOON!</div>
+                </div>
+
+                <div class="card-container">
+                    <div class="parent-image">
+                        <img class="image-container" src="https://picsum.photos/300/400" alt="" />
+
+                        <div class="tags-flex">
+                            <button class="btn-round btn-heart txt-s lightteal child-wishlist">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <span class="whishlist-heart"></span>
+
+                    <div class="title">
+                        <h3>Large Title</h3>
+                        <p class="title-small txt-s">small title</p>
+                    </div>
+
+                    <s class="price-box txt-xs fw-bold">Rs. 1345 <s class="striked">Rs. 1495</s>
+                        <span class="discount darkorange">(10% OFF)</span></s>
+
+                    <button class="btn buy-btn-padding txt-xs btn-solid white fw-semibold btn-disable" disabled>
+                        <p class="basered">OUT OF STOCK</p>
+                    </button>
+
+                    <button class="btn-disable btn-secondary txt-xs" disabled>
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER ------------------------------------------------------------------------------ -->
+    <footer class="bg-black">
+        <div class="white footer-container-ec">
+            <div class="child-1 footer-top-wrapper">
+                <div class="footer-logo">
+                    <div class="nav-title">
+                        <div class="nav-logo">
+                            <img src="/assets/bg-black-logo.png" alt="logo" srcset="" />
+                        </div>
+                        <div class="flex-title">
+                            <div class="fw-bold baseshade-gray">
+                                RALLY<span class="baseteal">ALLEY</span>
+                            </div>
+                            <p class="fs-07 baseteal">
+                                Smashinn Badminton Products your way
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-socials gray">
+                    <li>Youtube</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                </div>
+            </div>
+
+            <div class="child-2 footer-middle-wrapper">
+                <div class="category-flex fw-bold gray">
+                    <div class="category">Racquets |</div>
+                    <div class="category">Shoes |</div>
+                    <div class="category">Apparel</div>
+                </div>
+                <div class="category-flex"></div>
+            </div>
+
+            <div class="child-3 gray footer-bottom-wrapper">
+                <div class="copyright">© 2022 SWIFT-UI</div>
+                <ul class="credits flex-txt">
+                    <li><a href="https://swift-uiv1.netlify.app/">Swift UI</a></li>
+                    <li><a href="http://">Github</a></li>
+                    <li><a href="http://">Canva</a></li>
+                    <li><a href="http://">FontAwesome</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
