@@ -58,7 +58,7 @@
 
 
 
-@media only screen and (max-width: 54em) {
+@media only screen and (max-width: 590px) {
     .cart-pg-layout {
         display: grid;
         grid-template-areas:
