@@ -57,7 +57,11 @@ input[type="radio"] {
     align-items: center;
     gap: 2px;
 }
-
+.center-flex-rows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .bg-color-transparent{
     background-color: transparent;
 }
@@ -94,3 +98,4 @@ input[type="radio"] {
 .w-90{
     width: 90%;
 }
+

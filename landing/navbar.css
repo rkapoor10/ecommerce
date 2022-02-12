@@ -121,6 +121,7 @@
     justify-content: space-between  ;
     border-bottom: 1px solid #494b4c;
     padding: 5rem 0;
+    flex-wrap: wrap;
 }
 .footer-middle-wrapper{
     display: flex;
@@ -143,4 +144,5 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }

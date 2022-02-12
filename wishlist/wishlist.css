@@ -1,0 +1,23 @@
+.wishlist-pg-layout{
+    display: grid;
+    grid-template-areas: 
+    "head head head head head head"
+    "main main main main main main"
+    "foot foot foot foot foot foot";
+    gap: 20px;
+}
+
+
+.wishlist-pg-navbar{
+    grid-area: head;
+}
+
+.wishlist-pg-main{
+    grid-area: main;
+    width: 80%;
+    margin: auto;
+}
+
+.wishlist-pg-footer{
+    grid-area: foot;
+}
