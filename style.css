@@ -2,3 +2,5 @@
 @import '/ecstylesheets/base.css';
 @import '/landing/navbar.css';
 @import '/products-page/products.css';
+@import '/cart-pages/cart.css';
+@import '/wishlist/wishlist.css';
