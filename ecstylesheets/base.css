@@ -98,4 +98,6 @@ input[type="radio"] {
 .w-90{
     width: 90%;
 }
-
+.display-container{
+    border: 1px solid var(--white-color);
+}
